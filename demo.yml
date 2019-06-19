@@ -4,3 +4,9 @@
     - name: Hello Message
       debug:
         msg: "Hello World!"
+
+- name: Add the user 's_demo' with a primary group of 'google-sudoers'
+  user:
+    name: s_demo
+    comment: Discovery Demo
+    group: google-sudoers
